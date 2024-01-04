@@ -1,0 +1,56 @@
+// main: ../style.less
+
+.button {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	flex-wrap: wrap;
+	
+}
+
+.btn {
+	display: inline-block;
+	padding: 10px 40px;
+	font-family: inherit;
+	font-size: 1rem;
+	color: @MainColor;
+	border-radius: @Radius;
+	background-color: @ColorAccent;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: 700;
+	font-size: 0.8em;
+	width: 200px;
+	
+
+	& + & {
+		margin-left: 2%;
+		
+	}
+
+	&--one {
+		border: 1px @MainColor solid;
+		background-color: @Opacity;
+		&:hover,
+		&:focus {
+			border-color: @ColorAccent;
+			color: @ColorAccent;
+			background-color: @Opacity;
+
+		}
+
+	}
+
+	&--two {
+		&:hover,
+		&:focus {
+			color: @ColorAccent;
+			background-color: @MainColor;
+
+		}
+	}
+}
+
+
+
+//нет смысла сюда писать миксин, всего 2 кнопки в макете

@@ -1,0 +1,45 @@
+// main: ../style.less
+
+
+
+.container-fluid,
+.container{
+	 padding: 0 !important;
+}
+.conteiner-inner {
+	 margin-top: 14%;
+}
+
+.nav-item {
+	margin-right: 7%;
+}
+
+.nav-link {
+	color: #fff;
+	text-transform: uppercase;
+	transition: color .3s linear;
+	position: relative;
+}
+
+.nav-link:after {
+	content: "";
+	width: 100%;
+	height: 3px;
+	background-color: @ColorAccent;
+	position: absolute;
+	top: 100%;
+	z-index: 1;
+	left: 0;
+	opacity: 0;
+	transition: opacity .3s linear;
+
+}
+
+
+.nav-link:hover {
+	color: @ColorAccent;
+}
+
+.nav-link:hover:after {
+	opacity: 1;
+}
